@@ -1,0 +1,109 @@
+section {
+  width: 100%;
+  text-align: center;
+}
+section.wavy {
+  padding-top: 120px;
+  position: relative;
+  background: no-repeat url('https://images.unsplash.com/photo-1491185841098-9ce20f966624?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+  line-height: 1.5;
+  height: 100vh;
+}
+.curve {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* height: 100%; */
+  line-height: 1.5;
+  width: 100%;
+}
+
+.curve svg {
+  display: block;
+}
+
+section.wavy h1, section.wavy small {
+  color: rgba(255, 255, 255, 1);
+  width: 100%;
+}
+section.wavy small{
+  margin-top: 10px;
+}
+section.wavy div.quote-container {
+  padding: 30px;
+}
+
+section.description {
+  text-align: center;
+  padding: 50px 20px;
+  line-height: 1.7;
+}
+section.wavy h1.tags {
+  font-size: 1.2rem;
+}
+section.wavy h1.punch-line {
+  font-size: 2rem;
+}
+section.wavy small {
+  font-size: 0.8rem;
+}
+section.wavy small:first-of-type {
+  margin-top: 50px;
+}
+section.description .speciality {
+  font-size: 2.2rem;
+}
+@media only screen and (min-width: 960px) {
+  /* styles for browsers larger than 960px; */
+  section.wavy {
+    height: 100vh;
+    justify-content: start;
+  }
+  section.wavy h1, section.wavy small {
+    width: 70vh;
+  }
+  section.wavy h1.tags {
+    font-size: 1.2rem;
+  }
+  section.wavy h1.punch-line {
+    font-size: 2.5rem;
+  }
+  section.wavy small {
+    font-size: 1rem;
+  }
+  section.description .speciality {
+    font-size: 2.2rem;
+  }
+  section.wavy small:first-of-type {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  /* styles for browsers larger than 1440px; */
+  section.wavy {
+    height: 100vh;
+  }
+  section.wavy h1, section.wavy small {
+    width: 70vh;
+  }
+  section.wavy h1.tags {
+    font-size: 1.9rem;
+  }
+  section.wavy h1.punch-line {
+    font-size: 3.2rem;
+  }
+  section.wavy small {
+    font-size: 1rem;
+  }
+  section.description .speciality {
+    font-size: 2.2rem;
+  }
+  section.wavy small:first-of-type {
+    margin: 0;
+  }
+}

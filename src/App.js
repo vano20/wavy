@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Demos from './views/demos'
+import HeaderAction from './components/header-action'
+import FloatingMenu from './components/floating-menu'
+import './assets/App.css'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="app">
+      <header>
+        <div className="container">
+          <a href="/">Demo</a>
+          <a href="/#">Pages</a>
+          <a href="/#">Portofolio</a>
+          <div className="right">
+            <HeaderAction />
+          </div>
+        </div>
       </header>
+      <FloatingMenu />
+      <Demos />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,33 @@
+.floating-menu-container {
+  display: none;
+  flex-flow: column wrap;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background-color: #fff;
+  border-radius: 5px 0 0 5px;
+  border: none;
+}
+
+.floating-menu-container .floating-items {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.floating-menu-container .floating-items:not(:first-child) {
+  border-top: 1px solid #00000020;
+}
+
+.floating-menu-container .floating-items:hover {
+  background-color: #00000020;
+}
+
+@media only screen and (min-width: 960px) {
+  .floating-menu-container {
+    display: flex;
+  }
+}

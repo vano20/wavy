@@ -1,0 +1,85 @@
+.app header {
+  width: 100%;
+  height: 76px;
+  background: #fff;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+}
+.app div.container {
+  height: 76px;
+  background: #fff;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+div.container .right {
+  margin-left: auto;
+}
+div.container a {
+  display: none;
+  color: rgb(30, 30, 68);
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px 10px;
+  margin: 0 10px;
+  font-weight: bold;
+}
+div.container a:hover {
+  color: rgb(36, 36, 114);
+}
+.btn {
+  padding: 20px 30px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  align-items: center;
+}
+.btn.green {
+  background-color: #5ae663;
+  color: white;
+}
+.btn.green:hover {
+  background-color: #5ae66350;
+}
+
+.btn-round {
+  border-radius: 50px;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media only screen and (max-width: 600px) {
+  div.container {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 960px) {
+  div.container a {
+    display: block;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
