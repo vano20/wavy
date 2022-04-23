@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Package needed:
+- node js
+- npm (included with node js package)
+
 ## Step
 
 Run this step on your machine before you can open the react project:
