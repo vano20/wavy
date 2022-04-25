@@ -3,6 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Package needed:
+- git
 - node js
 - npm (included with node js package)
 
